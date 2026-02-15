@@ -1,6 +1,8 @@
 'use client'
 
-export function showElement(id) {
+import { ChangeEvent } from "react";
+
+export function showElement(id: string) {
     const element = document.getElementById(id);
     if (element) {
         element.classList.remove('hidden');
@@ -8,7 +10,7 @@ export function showElement(id) {
     }
 }
 
-export function hideElement(id) {
+export function hideElement(id: string) {
     const element = document.getElementById(id);
     if (element) {
         element.classList.add('hidden');
@@ -16,7 +18,7 @@ export function hideElement(id) {
     }
 }
 
-export const selctTxt = (htmlElement) => {
+export const selctTxt = (htmlElement: ChangeEvent<HTMLInputElement>) => {
     htmlElement.target.select();
 }
 

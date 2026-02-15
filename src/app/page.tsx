@@ -1,7 +1,7 @@
 'use client'
 
 import "@/app/page.css";
-import { showElement, hideElement, selctTxt } from "@/utils/helpers.js"
+import { showElement, hideElement, selctTxt } from "@/utils/helpers"
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 

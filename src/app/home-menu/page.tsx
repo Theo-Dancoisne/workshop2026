@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import "@/app/home-menu/page.css";
-import { routeExceptions, scoreExceptions } from "@/utils/helpers.js"
+import { routeExceptions, scoreExceptions } from "@/utils/helpers"
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
