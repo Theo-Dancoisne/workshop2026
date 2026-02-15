@@ -87,7 +87,6 @@
 
 .back-btn-floating {
   background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-  border: none;
   color: white;
   padding: 12px 20px;
   border-radius: 25px;
@@ -348,6 +347,8 @@
   gap: 1rem;
   width: 100%;
   min-height: 80px;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .choice-label:hover {
@@ -485,11 +486,6 @@
 
 .choice-icon {
   font-size: 3.5rem;
-}
-
-.choice-label {
-  font-size: 1.25rem;
-  font-weight: 600;
 }
 
 /* =============== ACTION SECTION =============== */
@@ -723,11 +719,6 @@
   
   .question-text {
     font-size: 1.25rem;
-  }
-  
-  .choice-label {
-    padding: 1rem;
-    min-height: 70px;
   }
   
   .choice-text {

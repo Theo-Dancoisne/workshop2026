@@ -3,17 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "start:dev": "echo dosn't works for now #serve out -c ../serve.json"
+    "start:dev": "echo dosn't works for now #serve out -c ../serve.json",
+    "test:clean": "rimraf .v8-coverage",
+    "test:start": "cross-env NODE_V8_COVERAGE=.v8-coverage NODE_OPTIONS=--inspect=9229 next dev",
+    "test:command": "npm run test:start",
+    "test": "playwright test",
+    "sonar": "bash ./scripts/sonarsource-docker.sh"
   },
   "dependencies": {
-    "next": "15.5.4",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "next": "^14.2.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "serve": "^14.2.5"
+    "@playwright/test": "^1.57.0",
+    "@types/node": "25.0.9",
+    "@types/react": "19.2.8",
+    "cross-env": "^10.1.0",
+    "monocart-coverage-reports": "^2.12.9",
+    "monocart-reporter": "^2.9.23",
+    "serve": "^14.2.5",
+    "typescript": "5.9.3"
   }
 }
